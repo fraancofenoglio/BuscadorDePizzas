@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(/assets/svg2.png);
+    font-family: League Gothic;
+    font-size: larger;
+}
+
+h1 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+#card-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.cards {
+    margin: 2%;
+    width: 90vw;
+    min-height: 36vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 1.5px 1px 2.5px black;
+}
+
+.cards:hover {
+    cursor: pointer;
+    height: 330px;
+    text-transform: uppercase;
+}
+
+.cards p {
+    font-size: 22px;
+    display: flex;
+    width: 90%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards img {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.cards  h3 {
+font-size: 30px;
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+}
+
+#name {
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    margin: 1%;
+    text-align: center;
+    
+}
+
+.button {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin: 1%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.button:hover {
+    background: white;
+    color: #AA0808;
+}
+
+footer {
+    padding-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    text-shadow: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-shadow: 1.5px 1px 2.5px black;
+}
+
+.error {
+    padding: 1rem;
+    border: 2px solid red;
+    background-color: rgb(249, 121, 121);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+@media (min-width:768px) {
+    #card-container {
+        width: 98vw;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .cards {
+        margin: 0.6%;
+        width: 210px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        color: #fff;
+    
+    }
+
+    .cards img {
+        width: 190px;
+        height: 120px;
+        border-radius: 10px;
+    }
+}
