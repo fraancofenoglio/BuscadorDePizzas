@@ -26,20 +26,21 @@ h1 {
 }
 
 #card-container {
-    margin-left: 15%;
+    margin-left: 13%;
+    padding-right: 5%;
     width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
     color: #fff;
     flex-wrap: nowrap;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .cards {
     margin: 2%;
     width: 310px;
-    height: 350px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,6 +141,8 @@ footer a:hover {
 
 @media (min-width:768px) {
     #card-container {
+        margin: 0;
+        padding: 0;
         width: 98vw;
         height: 400px;
         display: flex;
@@ -150,17 +153,6 @@ footer a:hover {
         flex-wrap: wrap;
         overflow: hidden;
     }
-
-    /* #card-container {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: #fff;
-        flex-wrap: nowrap;
-        overflow: auto;
-    
-    } */
 
     .cards {
         margin: 0.6%;
