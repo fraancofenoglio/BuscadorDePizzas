@@ -13,7 +13,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 90vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-image: url(/assets/svg2.png);
     font-family: League Gothic;
     font-size: larger;
@@ -143,15 +143,15 @@ footer a:hover {
     #card-container {
         margin: 0;
         padding: 0;
-        width: 98vw;
-        height: 400px;
+        width: 100vw;
+        max-height: 400px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         color: #fff;
         flex-wrap: wrap;
-        overflow: hidden;
+        overflow: auto;
     }
 
     .cards {
@@ -182,6 +182,5 @@ footer a:hover {
     .button {
         height: 40px;
     }
-
 
 }
