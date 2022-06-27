@@ -20,24 +20,26 @@ body {
 }
 
 h1 {
+    font-size:50px;
     margin-bottom: 20px;
     border-bottom: 1px solid black;
 }
 
 #card-container {
-    width: 100vw;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     color: #fff;
     flex-wrap: nowrap;
     overflow: auto;
+
 }
 
 .cards {
     margin: 2%;
-    width: 90vw;
-    min-height: 36vh;
+    min-width: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +58,7 @@ h1 {
 }
 
 .cards p {
-    font-size: 22px;
+    font-size: 28px;
     display: flex;
     width: 90%;
     height: 70px;
@@ -65,13 +67,16 @@ h1 {
 }
 
 .cards img {
-    width: 300px;
+    width: 280px;
     height: 180px;
     border-radius: 10px;
 }
 
+.cards  h2 {
+font-size: 35px;
+}
 .cards  h3 {
-font-size: 30px;
+font-size: 35px;
 }
 
 form {
@@ -81,23 +86,25 @@ form {
 
 #name {
     border: none;
-    border-radius: 20px;
-    width: 200px;
-    height: 40px;
+    border-radius: 40px;
+    width: 250px;
+    height: 60px;
     margin: 1%;
     text-align: center;
+    font-size: larger;
     
 }
 
 .button {
     cursor: pointer;
-    width: 100px;
-    height: 40px;
+    width: 130px;
+    height: 60px;
     border: none;
-    border-radius: 20px;
+    border-radius: 40px;
     margin: 1%;
     background: rgba(0, 0, 0, 0.3);
     color: #fff;
+    font-size: larger;
 }
 
 .button:hover {
@@ -113,6 +120,7 @@ footer a {
     text-decoration: none;
     text-shadow: none;
     color: #fff;
+    font-size: larger;
 }
 
 footer a:hover {
