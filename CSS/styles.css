@@ -54,7 +54,7 @@ h1 {
 
 .cards:hover {
     cursor: pointer;
-    height: 330px;
+    height: 380px;
     text-transform: uppercase;
 }
 
