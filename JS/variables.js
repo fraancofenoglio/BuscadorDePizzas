@@ -1,7 +1,8 @@
 export const LSPizzas = JSON.parse(localStorage.getItem("Pizzas"));
 export const form = document.querySelector("#form");
 export const input = document.querySelector("#name");
-export const button = document.querySelector("#form > button");
+export const button = document.querySelector("#form > button:nth-child(2)");
+export const button2 = document.querySelector("#form > button:nth-child(3)");
 export const cardContainer = document.getElementById("card-container");
 export const card = document.createElement('div');
 export const title = document.createElement('h2');

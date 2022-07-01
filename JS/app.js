@@ -54,7 +54,7 @@ const Pizzas = [
     }
 ];
 
-import {button, form} from "./variables.js";
+import {button, button2, form} from "./variables.js";
 import {showAll} from "./showAllFunction.js";
 import {findPizza} from "./findPizzaFunction.js"
 
@@ -67,3 +67,5 @@ window.addEventListener("load", showAll);
 form.addEventListener("submit", e=> e.preventDefault());
 
 button.addEventListener("click", findPizza);
+
+button2.addEventListener("click", showAll);

@@ -1,6 +1,8 @@
+import { cleanHTML } from "./cleanHTMLFunction.js";
 import { LSPizzas, cardContainer } from "./variables.js";
 
 export function showAll() {
+    cleanHTML()
     LSPizzas.map((Pizzita) => {
 
         const card = document.createElement('div');
